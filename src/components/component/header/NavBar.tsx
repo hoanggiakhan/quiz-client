@@ -1,6 +1,6 @@
 import { Navbar, Nav, Container, Dropdown } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./Navbar.css"; // File CSS tùy chỉnh
+import "./NavBar.css"; // File CSS tùy chỉnh
 import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import { useAuth } from "../../../utils/AuthContext";
 import { getAvatarUrl } from "../../../utils/JwtService";
