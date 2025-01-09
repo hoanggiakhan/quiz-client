@@ -1,0 +1,195 @@
+/* Đặt tất cả quy tắc trong phạm vi .community-wrapper */
+.community-wrapper {
+  font-family: "Poppins", Arial, sans-serif;
+  background: linear-gradient(to bottom, #e0f7fa, #ffffff); /* Nền sáng tạo cảm giác dễ chịu */
+  min-height: 100vh;
+  padding: 20px 0;
+}
+
+.community-wrapper .container {
+  max-width: 800px;
+  margin: 0 auto;
+  animation: fadeIn 0.8s ease-in-out; /* Hiệu ứng xuất hiện */
+}
+
+/* Hiệu ứng fade-in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Phần tạo bài viết */
+.community-wrapper .create-post {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  background: #ffffff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.community-wrapper .create-post:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.community-wrapper .create-post textarea {
+  resize: none;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  padding: 12px;
+  width: 100%;
+  font-size: 16px;
+  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.05);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.community-wrapper .create-post textarea:focus {
+  outline: none;
+  border-color: #0288d1;
+  box-shadow: 0 0 6px rgba(2, 136, 209, 0.4);
+}
+
+.community-wrapper .create-post input[type="file"] {
+  margin-top: 12px;
+}
+
+.community-wrapper .create-post button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.community-wrapper .create-post button:hover {
+  background-color: #388e3c;
+  transform: translateY(-2px);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Danh sách bài viết */
+.community-wrapper .posts .card {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 16px;
+  background: #ffffff;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.community-wrapper .posts .card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.community-wrapper .posts .card-body {
+  background: #f8f9fa;
+  padding: 16px;
+}
+
+.community-wrapper .posts .card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  transition: transform 0.3s ease;
+}
+
+.community-wrapper .posts .card img:hover {
+  transform: scale(1.05);
+}
+
+/* Phần dropdown menu */
+.community-wrapper .dropdown {
+  position: relative;
+}
+
+.community-wrapper .dropdown-menu {
+  top: 100%;
+  left: auto;
+  right: 0;
+  z-index: 1000;
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.community-wrapper .dropdown-item {
+  padding: 10px 16px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.community-wrapper .dropdown-item:hover {
+  background-color: #e3f2fd;
+}
+
+/* Phần bình luận */
+.community-wrapper .comments {
+  border-top: 1px solid #ddd;
+  margin-top: 12px;
+  padding-top: 12px;
+}
+
+.community-wrapper .comments .comment {
+  border-bottom: 1px dashed #ccc;
+  padding-bottom: 8px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: flex-start;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.community-wrapper .comments .comment img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.community-wrapper .comments .comment:last-child {
+  border-bottom: none;
+}
+
+.community-wrapper .comments textarea {
+  resize: none;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  padding: 10px;
+  width: 100%;
+  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.05);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.community-wrapper .comments textarea:focus {
+  outline: none;
+  border-color: #0288d1;
+  box-shadow: 0 0 6px rgba(2, 136, 209, 0.4);
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  .community-wrapper .create-post textarea,
+  .community-wrapper .comments textarea {
+    font-size: 14px;
+  }
+
+  .community-wrapper button {
+    font-size: 14px;
+  }
+}

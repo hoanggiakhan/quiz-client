@@ -1,0 +1,122 @@
+/* Navbar tổng quan */
+body {
+  padding-top: 70px; /* Đảm bảo không gian cho navbar */
+}
+
+/* Điều chỉnh chiều cao navbar nếu cần */
+.custom-navbar {
+  height: 60px; /* Đặt chiều cao cố định cho navbar */
+  background: linear-gradient(to right, #4caf50, #1e88e5);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+/* Thêm khoảng trống phía trên body */
+body {
+  margin: 0;
+  padding-top: 60px; /* Khoảng trống tương ứng với chiều cao navbar */
+  box-sizing: border-box;
+}
+
+/* Logo thương hiệu */
+.brand-logo {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff !important;
+  text-decoration: none; /* Loại bỏ gạch chân */
+}
+
+/* Liên kết trong navbar */
+.nav-links {
+  display: flex;
+  flex-wrap: wrap; /* Để đảm bảo không bị tràn trên màn hình nhỏ */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin: 0 10px;
+}
+
+.nav-link-button {
+  color: #fff !important;
+  margin-right: 15px;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  padding: 5px 15px;
+  transition: background-color 0.3s, color 0.3s;
+  text-decoration: none; /* Loại bỏ gạch chân */
+}
+
+.nav-link-button:hover {
+  background-color: #fff;
+  color: #4caf50 !important;
+}
+
+/* Dropdown Avatar */
+.avatar-dropdown {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.avatar-dropdown img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid white;
+  transition: transform 0.3s ease, border 0.3s ease;
+}
+
+.avatar-dropdown:hover img {
+  transform: scale(1.1);
+  border-color: #00bcd4;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  background-color: #343a40;
+  border: none;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-menu .dropdown-item {
+  color: white !important;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: #007bff;
+  color: white !important;
+}
+
+/* Responsive Behavior */
+@media (max-width: 768px) {
+  .custom-navbar {
+    flex-direction: column; /* Chuyển navbar thành dạng cột trên màn hình nhỏ */
+    text-align: center;
+  }
+
+  .brand-logo {
+    font-size: 1.2rem;
+    margin-bottom: 10px; /* Thêm khoảng cách dưới logo */
+  }
+
+  .nav-links {
+    flex-direction: column; /* Liệt kê các link theo cột */
+  }
+
+  .nav-link-button {
+    margin: 5px 0; /* Giảm margin cho các nút */
+    padding: 10px 15px; /* Tăng padding để dễ bấm hơn */
+  }
+}

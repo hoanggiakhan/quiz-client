@@ -1,0 +1,53 @@
+.container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .title {
+    color: #007bff;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .quizList {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .quizItem {
+    background: #ffffff;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .quizItem:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .badge {
+    margin-left: 10px;
+    font-size: 0.9rem;
+  }
+  
+  .activeBadge {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .inactiveBadge {
+    background-color: #6c757d;
+    color: white;
+  }
+  
+  .startButton {
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  

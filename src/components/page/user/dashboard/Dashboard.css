@@ -1,0 +1,60 @@
+.dashboard-card,
+.quiz-item {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.dashboard-card:hover,
+.quiz-item:hover {
+  transform: translateY(0); /* Giữ nguyên vị trí */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Không thay đổi kích thước bóng */
+}
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --gradient-start: #007bff;
+  --gradient-end: #00c6ff;
+}
+
+.dashboard-container {
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+.dashboard-card {
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bóng cố định */
+}
+
+.gradient-bg {
+  background: linear-gradient(45deg, var(--gradient-start), var(--gradient-end));
+}
+
+.text-gradient {
+  background: linear-gradient(45deg, var(--gradient-start), var(--gradient-end));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.quiz-item {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bóng cố định */
+  border-radius: 10px;
+  transition: none; /* Không có hiệu ứng khi hover */
+}
+
+.quiz-item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Không thay đổi bóng */
+  transform: none; /* Không di chuyển hoặc thay đổi vị trí */
+}
+
+.pagination-item.active {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+button,
+a {
+  text-decoration: none;
+  outline: none;
+}

@@ -1,0 +1,23 @@
+.dashboard-container {
+  background-color: #f8f9fa;
+}
+
+.dashboard-card {
+  border-radius: 8px;
+}
+
+.quiz-item {
+  transition: transform 0.2s ease;
+}
+
+.quiz-item:hover {
+  transform: translateY(-5px);
+}
+
+.text-primary {
+  color: #007bff !important;
+}
+
+.text-success {
+  color: #28a745 !important;
+}

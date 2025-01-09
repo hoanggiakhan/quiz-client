@@ -1,0 +1,48 @@
+.hero-section {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .animate-btn {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .animate-btn:hover {
+    transform: scale(1.1);
+    background-color: #6a11cb;
+  }
+  
+  .features-section .feature-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .features-section .feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .responsive-section img.animate-img {
+    animation: float 3s infinite ease-in-out;
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  .cta-section {
+    background: #2575fc;
+    color: #fff;
+  }
+  

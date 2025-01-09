@@ -1,0 +1,29 @@
+.lesson-container {
+    max-width: 1500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .lesson-title {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+  }
+  
+  .lesson-content {
+    text-align: left;
+    line-height: 1.8;
+    font-size: 1.2em;
+    color: #555;
+  }
+  
+  .lesson-content strong {
+    font-weight: bold;
+    color: #000;
+  }
+  
